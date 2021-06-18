@@ -1,0 +1,2 @@
+class BarCrawl < ApplicationRecord
+end
