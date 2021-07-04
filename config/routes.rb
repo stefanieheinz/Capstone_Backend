@@ -5,5 +5,5 @@ Rails.application.routes.draw do
   get "/crawls" => "crawls#index"
   post "/crawls" => "crawls#create"
   get "/bars" => "bars#index"
-  post "/bar_crawls" "bar_crawls#create"
+  post "/bar_crawls" => "bar_crawls#create"
 end
