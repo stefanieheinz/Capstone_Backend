@@ -5,4 +5,6 @@ Rails.application.routes.draw do
   post "/crawls" => "crawls#create"
   get "/bars" => "bars#index"
   post "/bar_crawls" => "bar_crawls#create"
+  get "/crawls/:id" => "crawls#show"
+  patch "/crawls/:id" => "crawls#update"
 end
