@@ -7,4 +7,5 @@ Rails.application.routes.draw do
   post "/bar_crawls" => "bar_crawls#create"
   get "/crawls/:id" => "crawls#show"
   patch "/crawls/:id" => "crawls#update"
+  patch "/bar_crawls/:id" => "bar_crawls#update"
 end

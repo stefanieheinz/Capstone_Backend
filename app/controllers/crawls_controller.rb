@@ -1,7 +1,7 @@
 class CrawlsController < ApplicationController
   def index
     crawls = current_user.crawls
-    render json: crawls
+    render json: crawls, include: "bar_crawls.bar"
   end
 
   def create

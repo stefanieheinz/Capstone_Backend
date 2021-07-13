@@ -8,4 +8,11 @@ class BarCrawlsController < ApplicationController
     bar_crawl.save
     render json: bar_crawl.as_json
   end
+
+  def update
+    bar_crawl = BarCrawl.find_by(id: params[:id])
+    bar_crawl.scheduled_time = params[:scheduled_time] || bar_crawl.scheduled_time
+    bar_crawl.save
+    render json: bar_crawl
+  end
 end
